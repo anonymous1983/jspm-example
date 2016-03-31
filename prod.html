@@ -8,7 +8,7 @@
 </head>
 <body>
   <app></app>
-  <script>
+  <!--script>
     var readyForMainLoad
     if (location.origin.match(/localhost/)) {
       System.trace = true
@@ -19,8 +19,8 @@
     Promise.resolve(readyForMainLoad).then(function() {
       System.import("app").then(function(){ console.log("running") });
     });
-  </script>
+  </script-->
 
-  <!--script type="text/javascript" src="build/app.js"></script-->
+  <script type="text/javascript" src="build/app.js"></script>
 </body>
 </html>

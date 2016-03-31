@@ -24,9 +24,12 @@
   "dependencies": {},
   "devDependencies": {
     "angular2": "^2.0.0-beta.13",
+    "browser-sync": "^2.11.2",
     "chokidar-socket-emitter": "^0.5.0",
     "es6-promise": "^3.1.2",
     "gulp": "^3.9.1",
+    "gulp-jspm": "^0.5.8",
+    "gulp-jspm-build": "0.0.14",
     "http-server": "^0.9.0",
     "jspm": "^0.16.32",
     "open": "0.0.5",
