@@ -1,34 +1,43 @@
 {
-  "name": "jspm-example",
+  "name": "angular2-jspm",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Checkout for more information: <a href=\"http://www.mario-brendel.com/angular2-setup/2016/01/28/Angular2_Jspm_Setup_Part1/\">mario-brendel.com</a>",
+  "main": "config.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "postinstall": "jspm install"
+    "start": "node server",
+    "build": "jspm bundle-sfx app build/app.js"
+  },
+  "jspm": {
+    "dependencies": {
+      "angular2": "npm:angular2@^2.0.0-beta.6",
+      "systemjs-hot-reloader": "github:capaj/systemjs-hot-reloader@^0.5.6",
+      "ts": "github:frankwallis/plugin-typescript@^3.0.3"
+    },
+    "devDependencies": {
+      "babel": "npm:babel-core@^5.8.24",
+      "babel-runtime": "npm:babel-runtime@^5.8.24",
+      "core-js": "npm:core-js@^1.1.4"
+    }
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "angular2": "^2.0.0-beta.13",
+    "chokidar-socket-emitter": "^0.5.0",
+    "es6-promise": "^3.1.2",
+    "gulp": "^3.9.1",
+    "http-server": "^0.9.0",
+    "open": "0.0.5",
+    "systemjs": "^0.19.25"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://anonymous1983@github.com/anonymous1983/jspm-example.git"
+    "url": "git+https://github.com/MarioBrendel/Angular2-Jspm-Typescript-Atom-Seed.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/anonymous1983/jspm-example/issues"
+    "url": "https://github.com/MarioBrendel/Angular2-Jspm-Typescript-Atom-Seed/issues"
   },
-  "homepage": "https://github.com/anonymous1983/jspm-example#readme",
-  "devDependencies": {
-    "jspm": "^0.16.32"
-  },
-  "jspm": {
-    "dependencies": {
-      "angular2": "npm:angular2@^2.0.0-beta.13",
-      "es6-shim": "github:es-shims/es6-shim@^0.35.0",
-      "reflect-metadata": "npm:reflect-metadata@^0.1.3",
-      "zone.js": "npm:zone.js@^0.6.8"
-    },
-    "devDependencies": {
-      "typescript": "npm:typescript@^1.6.2"
-    }
-  }
+  "homepage": "https://github.com/MarioBrendel/Angular2-Jspm-Typescript-Atom-Seed#readme"
 }
